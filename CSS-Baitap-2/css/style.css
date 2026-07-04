@@ -7,6 +7,8 @@ header{
 }
 nav{
   background-color: #DCBB9D;
+  display: inline-block;
+  width: 80%;
 }
 main{
   background-color: #DBD1C3;
@@ -15,10 +17,12 @@ main{
 footer{
   background-color:#473F2D;
 }
+/*
 li{
   display: inline-block;
   windth: 120px;
 }
+*/
 h1{
   text-align: center;
   font-family: Georgia, serif;
@@ -26,4 +30,35 @@ h1{
 }
 p{
   line-height: 1.6;
+}
+.skip-link{
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  z-index: 100;
+  font-size: 16px;
+}
+.skip-link:focus{
+  top: 0;
+}
+nav img{
+  width: 10%;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-around; 
+  align-items: center;           
+  row-gap: 20px;                 
+}
+.grid img{
+  width: 100%;
+}
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
